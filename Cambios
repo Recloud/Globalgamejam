@@ -1,0 +1,4 @@
+//Hago aqui este archivo para que escribamos lo que vayamos cambiando y asi no estar leyendo codigo por codigo
+
+Cambie xx = 0 ----> xx = 32 en globales_juego (create)
+agregado fullscreen en evento create (a la challa, con el boton que esta en draw, settings)
