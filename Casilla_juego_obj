@@ -1,19 +1,21 @@
 Create--------------------------------------------------------------------
 MouseinNode = false;
 NumberofTurn = 1;
+CasillaBloqueada = false;
 
 
 Left Button---------------------------------------------------------------
-if(NumberofTurn == 1){
+//Movimiento personajes
+if(NumberofTurn == 1 and CasillaBloqueada == false){
     with(Phomty_char){
         instance_destroy();
     }
-    instance_create(x,y-25,Phomty_char)
-}else if(NumberofTurn == 2){
+    instance_create(x,y-25,Phomty_char);
+}else if(NumberofTurn == 2 and CasillaBloqueada == false){
     with(Falang_char){
         instance_destroy();
     }
-    instance_create(x-15,y-99,Falang_char)
+    instance_create(x-15,y-99,Falang_char);
 }
 
 
@@ -30,4 +32,15 @@ if(MouseinNode = false){
     with(casilla_seleccion_obj){
         instance_destroy();
     }
+}
+
+
+Step-------------------------------------------------------------------------
+//Bloqueo de casillas
+if(place_meeting(x,y,Phomty_char)){
+    CasillaBloqueada = true;
+}else if(place_meeting(x,y,Falang_char)){
+    CasillaBloqueada = true;
+}else{
+    CasillaBloqueada = false;
 }
