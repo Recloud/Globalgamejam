@@ -1,5 +1,6 @@
 //Hago aqui este archivo para que escribamos lo que vayamos cambiando y asi no estar leyendo codigo por codigo
 
-Cambie xx = 0 ----> xx = 32 en globales_juego (create)
-agregado fullscreen en evento create (a la challa, con el boton que esta en draw, settings)
-el porte de la sala ahora es 897 x 705
+-Cambie xx = 0 ----> xx = 32 en globales_juego (create)
+-agregado fullscreen en evento create (a la challa, con el boton que esta en draw, settings)
+-el porte de la sala ahora es 897 x 705
+-Cambio hecho en casilla_juego_obj (agregado step y cambios en create y left button)(pjs no entran ahora a casilla con algo dentro)
