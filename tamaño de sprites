@@ -1,0 +1,23 @@
+// TAMAÑO DE SPRITES
+// UI
+corazones = (32x32)
+iconos de las ondas = (80x80)
+avatar = (160x160)
+background visible = 720x720
+barras laterales = 280x720
+botones del menu = 256x96
+titulo del menu = 512x192
+cofres = 
+
+// PLAYER
+player = 80x80
+player.hitbox = 32x32
+player.bullets = 16x32
+
+// ENEMIGOS
+enemies = 
+enmies.hitbox = 
+enemies.bullets = (16x16)
+
+// OBJETOS
+cofres =
