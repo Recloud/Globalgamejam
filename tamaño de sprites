@@ -1,7 +1,7 @@
 // TAMAÑO DE SPRITES
 // UI
 corazones = 32x32
-iconos de las ondas = 80x80
+iconos de los poderes = 80x80
 avatar = 160x160
 background visible = 720x720
 barras laterales = 280x720
