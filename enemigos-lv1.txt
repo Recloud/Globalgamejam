@@ -14,7 +14,7 @@ Los trolls son del porte de un humano, piel verde escamosa, con orejas largas y 
     b) lanza bolas de fuego
     c) muere
 
-- Troll suicida : Igual que el Troll atacante, solo que tiene una carga explosiva en la espalda, la cual explota al morir o al hacer contacto con el enemigo.
+- Troll Suicida : Igual que el Troll atacante, solo que tiene una carga explosiva en la espalda, la cual explota al morir o al hacer contacto con el enemigo.
   - Movimientos :
     a) corre hacia el enemigo
     b) explota
@@ -28,10 +28,10 @@ Los trolls son del porte de un humano, piel verde escamosa, con orejas largas y 
 Especie : Elfos Oscuros.
 Mas similares a los humanos, los elfos oscuros son agiles y muy inteligentes. Visten similar a los humanos, pero son bastante delgados.
 
-- Elfo arquero : lanza flechas desde lejos mientras se mueve para esquivar los ataques del enemigo.
+- Elfo Mago : lanza bolas magicas a todos los enemigos a su alrededor.
   - Movimientos :
-    a) Se mueve mientras apunta al enemigo
-    b) Lanza flecha
+    a) Se mantiene en espera
+    b) Lanza bolas magicas
     b) Muere
 
 JEFE :
