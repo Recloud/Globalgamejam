@@ -1,0 +1,116 @@
+Create------------------------------------
+spd = 4
+alive = 1
+hp = 3
+invul = 0
+wave1_cd = 0
+wave2_cd = 0
+wave3_cd = 0
+
+//TIMERS
+tf = 0
+timer_inv = 0
+t = 0 
+instance_create(x,y,player_hb_obj)
+
+
+Step--------------------------------------
+if alive {
+   //up
+   if keyboard_check(ord('W')) {
+      y -= spd
+   }
+   
+   //down
+   if keyboard_check(ord('S')) {
+      y += spd 
+   }
+   
+   //cancel up
+   if keyboard_check(ord('W')) and keyboard_check(ord('S')) {
+      if keyboard_lastkey = ord('W') {
+         y -= spd
+      } else if keyboard_lastkey = ord('S') {
+                y += spd 
+             }
+   }
+   
+   //right
+   if keyboard_check(ord('D')) and !place_meeting(x + spd , y, blackline_obj) {
+      x += spd 
+   }
+   
+   //left
+   if keyboard_check(ord('A')) and !place_meeting(x - spd, y, blackline_obj) {
+      x -= spd 
+   }
+   
+      //cancel up
+   if keyboard_check(ord('A')) and keyboard_check(ord('D')) {
+      if keyboard_lastkey = ord('A') {
+         x -= spd
+      } else if keyboard_lastkey = ord('D') {
+                x += spd 
+             }
+   }
+   
+   //disparos 
+   if mouse_check_button(mb_left) and instance_number(balaPlayer_obj) < 3 {
+      t += 1
+      if t = 10 {
+         a = instance_create(x,y,balaPlayer_obj)
+         a.speed = 10
+         a.direction = point_direction(x,y,mouse_x,mouse_y)
+         t = 0
+      }
+   }
+   
+   //GET HIT
+   if invul = 1 {
+      tf += 1
+      if tf = 10 {
+         if image_alpha = 1 {
+            image_alpha = 0.50
+         }
+         else if image_alpha = 0.50 {
+                 image_alpha = 1
+              }
+         tf = 0
+      }
+      timer_inv += 1
+      if timer_inv = 180 {
+          image_alpha = 1
+          invul = 0
+          timer_inv = 0
+      }
+   } 
+   
+   //WAVES
+   if !invul {
+      if mouse_check_button(mb_right) {
+         switch (global_obj.poderes_ondas) {
+                case 1: if wave1_cd = 0 {
+                           instance_create(x,y,wave1_obj)
+                           wave1_cd = 60*15
+                        }
+                break;
+                case 2: if wave2_cd = 0 {
+                            instance_create(x,y,destroyer_ring_obj)
+                            wave2_cd = 60*20
+                        }
+                break;
+      }
+}
+      if wave1_cd > 0 {
+         wave1_cd -= 1
+      }else if(wave2_cd > 0){
+        wave2_cd -= 1;
+      }
+   }
+   
+   //DEAD
+   if hp = 0 {
+      alive = 0
+   }
+
+}//ALIVE
