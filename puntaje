@@ -4,4 +4,4 @@ puntaje=0;
 
 //en puntaje_obj, evento collition with player_obj
 
-global_obj.puntaje += 100;
+global_obj.puntaje += 5;
