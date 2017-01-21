@@ -1,7 +1,0 @@
-//player_obj
-
-if mouse_check_button(mb_left) {
-a = instance_create (x,y,bala_obj);
-a.speed = 10
-a.direction = point_direction(x,y,mouse_x,mouse_y)
-}
