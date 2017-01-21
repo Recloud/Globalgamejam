@@ -1,4 +1,21 @@
 Create----------------------------------------------------
-//balas enemigo quieto-dispara
-direction = point_direction(x,y,player_obj.x,player_obj.y)
-speed = 7
+slow = 0
+r = 0
+
+
+Step------------------------------------------------------
+//wave1
+if instance_exists(wave1_obj) { 
+    r += 2
+    if collision_circle(wave1_obj.x,wave1_obj.y,r,bala_obj,0,0) {
+      if slow = 0 {
+        speed = speed/3
+        slow = 1
+       }
+    }
+} else { r = 0 }
+
+//wave2
+if(place_meeting(x,y,destroyer_ring_obj)){
+instance_destroy()
+}
