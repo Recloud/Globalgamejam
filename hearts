@@ -1,0 +1,21 @@
+//hearts
+if player_obj.hp = 3 {
+  draw_sprite_ext(fullheart_spr,0,1070,230,1,1,0,c_white,1);
+  draw_sprite_ext(fullheart_spr,0,1120,230,1,1,0,c_white,1);
+  draw_sprite_ext(fullheart_spr,0,1170,230,1,1,0,c_white,1);
+}
+else if player_obj.hp = 2 {
+  draw_sprite_ext(fullheart_spr,0,1070,230,1,1,0,c_white,1);
+  draw_sprite_ext(fullheart_spr,0,1120,230,1,1,0,c_white,1);
+  draw_sprite_ext(emptyheart_spr,0,1170,230,1,1,0,c_white,1);
+}
+else if player_obj.hp = 1 {
+  draw_sprite_ext(fullheart_spr,0,1070,230,1,1,0,c_white,1);
+  draw_sprite_ext(emptyheart_spr,0,1120,230,1,1,0,c_white,1);
+  draw_sprite_ext(emptyheart_spr,0,1170,230,1,1,0,c_white,1);
+}
+else if player_obj.hp = 0 {
+  draw_sprite_ext(emptyheart_spr,0,1070,230,1,1,0,c_white,1);
+  draw_sprite_ext(emptyheart_spr,0,1120,230,1,1,0,c_white,1);
+  draw_sprite_ext(emptyheart_spr,0,1170,230,1,1,0,c_white,1);
+}
