@@ -1,0 +1,34 @@
+if room != r_intro and room != r_first_room {
+    draw_set_alpha(1)
+    draw_set_font(viking_fnt);
+    draw_set_halign(fa_left) 
+    draw_text_transformed_colour(50,650,"Score " + string(puntaje) ,1,1,0,c_white,c_white,c_white,c_white,1);
+    draw_text_transformed_colour(50,90,"Wave " + string(monsters_waves_obj.wave) ,1,1,0,c_white,c_white,c_white,c_white,1);
+    
+    //hearts
+    if player_obj.hp = 3 {
+      draw_sprite_ext(fullheart_spr,0,1070,230,1,1,0,c_white,1);
+      draw_sprite_ext(fullheart_spr,0,1120,230,1,1,0,c_white,1);
+      draw_sprite_ext(fullheart_spr,0,1170,230,1,1,0,c_white,1);
+    }
+    else if player_obj.hp = 2 {
+      draw_sprite_ext(fullheart_spr,0,1070,230,1,1,0,c_white,1);
+      draw_sprite_ext(fullheart_spr,0,1120,230,1,1,0,c_white,1);
+      draw_sprite_ext(emptyheart_spr,0,1170,230,1,1,0,c_white,1);
+    }
+    else if player_obj.hp = 1 {
+      draw_sprite_ext(fullheart_spr,0,1070,230,1,1,0,c_white,1);
+      draw_sprite_ext(emptyheart_spr,0,1120,230,1,1,0,c_white,1);
+      draw_sprite_ext(emptyheart_spr,0,1170,230,1,1,0,c_white,1);
+    }
+    else if player_obj.hp = 0 {
+      draw_sprite_ext(emptyheart_spr,0,1070,230,1,1,0,c_white,1);
+      draw_sprite_ext(emptyheart_spr,0,1120,230,1,1,0,c_white,1);
+      draw_sprite_ext(emptyheart_spr,0,1170,230,1,1,0,c_white,1);
+    }
+
+} // not a player
+
+if debug {
+   draw_text_colour(64,64,bala_obj.r,c_white,c_white,c_white,c_white,1)
+}
