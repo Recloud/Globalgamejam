@@ -25,3 +25,16 @@ if timer == 120{
 
 //draw
 draw_circle_colour(x,y,r,c_blue,c_blue,1)
+
+
+
+
+
+//en bala_obj
+//wave3
+if instance_exists(wave3_obj){
+    r +=20
+    if collision_circle(wave3_obj.x,wave3_obj.y,r,bala_obj,0,0) {
+       instance_destroy() 
+    }
+}
