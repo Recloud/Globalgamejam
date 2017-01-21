@@ -14,7 +14,7 @@ if(count = 60){
     speed = 7;
 }
 if(distance_to_object(player_obj) <= 96){
-   allahuakbar_obj.speed = 0;
+   speed = 0;
    countwaiting +=1;
    
    if(countwaiting == 20){
