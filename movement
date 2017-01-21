@@ -1,0 +1,16 @@
+//up
+if keyboard_check (ord('W')){
+    y -=spd
+};
+//right
+if keyboard_check (ord('D')){
+    x+=spd
+};
+//down
+if keyboard_check (ord('S')){
+    y+=spd
+};
+//left
+if keyboard_check (ord('A')){
+    x-=spd
+};
