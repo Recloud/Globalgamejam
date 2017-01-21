@@ -1,0 +1,32 @@
+ETAPA 1 : Villa Mounstro
+
+Especie : Trolls.
+Los trolls son del porte de un humano, piel verde escamosa, con orejas largas y poco pelo. Tienen una especie de armadura (traje de combate).
+
+- Troll lanza-piedras : Se queda quieto mientras lanza las piedras desde lejos.
+  - Movimientos :
+    a) se mantiene en espera
+    b) lanza piedra
+    c) muere
+
+- Troll atacante : Se lanza solo armado con sus puños a fin de acabar con el invasor.
+  -Movimientos :
+    a) corre hacia el enemigo
+    b) muere
+
+- Troll suicida : Igual que el Troll atacante, solo que tiene una carga explosiva en la espalda, la cual explota al morir o al hacer contacto con el enemigo.
+  - Movimientos :
+    a) corre hacia el enemigo
+    b) explota
+
+Especie : Elfos Oscuros.
+Mas similares a los humanos, los elfos oscuros son agiles y muy inteligentes. Visten similar a los humanos, pero son bastante delgados.
+
+- Elfo arquero : lanza flechas desde lejos mientras se mueve para esquivar los ataques del enemigo.
+  - Movimientos :
+    a) Se mueve mientras apunta al enemigo
+    b) Lanza flecha
+    b) Muere
+
+JEFE :
+No tiene
