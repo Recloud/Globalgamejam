@@ -15,9 +15,9 @@ player.hitbox = 32x32
 player.bullets = 32x16
 
 // ENEMIGOS
-enemies = 
-enmies.hitbox = 
-enemies.bullets = (16x16)
+enemies = 48x48
+enmies.hitbox = 32x32
+enemies.bullets = 16x16
 
 // OBJETOS
 cofres =
