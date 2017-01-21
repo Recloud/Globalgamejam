@@ -1,9 +1,0 @@
-timer += 1 
-if timer = 60 {
-   for (i = 0; i < 360; i += 20 )  {
-        a = instance_create(x,y,bala_obj)
-        a.direction = i 
-        a.speed = 6
-  }
-  timer = 0
-}
