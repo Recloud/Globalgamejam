@@ -10,24 +10,30 @@ Tienen una especie de armadura de cuero (traje de combate).
     b) lanza bola de agua
     c) muere
 
-- Triton atacante : Se lanza solo armado con sus puños a fin de acabar con el invasor.
+- Triton Atacante : Se lanza solo armado con sus puños a fin de acabar con el invasor.
   -Movimientos :
     a) corre hacia el enemigo
     b) muere
 
-- Triton suicida : Igual que el Triton atacante, solo que tiene una extraña concha gigante con espinas en su espalda.
+- Triton Suicida : Igual que el Triton atacante, solo que tiene una extraña concha gigante con espinas en su espalda.
 La concha explota al morir el triton o al hacer contacto con el enemigo, lanzando espinas para todos lados.
   - Movimientos :
     a) corre hacia el enemigo
     b) explota
+    
+- Triton Mago Rojo : Se mueve mientras lanza bolas magicas de agua.
+  - Movimientos :
+    a) se mantiene en espera
+    b) lanza bola de agua
+    c) muere
 
 Especie : Sirenas.
 Mas similares a los humanos, las sirenas son agiles nadadoras y muy inteligentes. Visten similar a los humanos.
 
-- Sirena arquera : lanza flechas desde lejos mientras se mueve para esquivar los ataques del enemigo.
+- Sirena Gritona : Grita y lanza ondas sonicas en todas direcciones contra los enemigos.
   - Movimientos :
-    a) Se mueve mientras apunta al enemigo
-    b) Lanza flecha
+    a) Se mantiene en espera
+    b) Grita atacando todo a su alrededor
     b) Muere
 
 JEFE : KRAKEN
