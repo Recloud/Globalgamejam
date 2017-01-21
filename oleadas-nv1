@@ -1,3 +1,5 @@
+***** VERSION 2.0 *****
+
 Dificultad :
 Facil = velocidad de repeticion de balas enemigas lenta
 
@@ -21,20 +23,20 @@ Troll chaman x 1
 (5 / 90)
 
 Oleada 3 :
-Troll atacante x 3
-Troll chaman x 1
+Troll atacante x 2
+Troll chaman x 2
 (9 / 90)
 
 Oleada 3 :
-Troll atacante x 3
-Troll chaman x 1
+Troll atacante x 2
+Troll chaman x 2
 Troll suicida x 1
 (14 / 90)
 
 Oleada 4 :
-Troll atacante x 3
+Troll atacante x 2
 Troll chaman x 2
-Troll suicida x 1
+Troll suicida x 2
 (20 / 90)
 
 Oleada 5 :
@@ -59,8 +61,8 @@ Troll Chaman Rojo x 2
 
 Oleada 8 :
 Troll Atacante x 3
-Troll Suicida x 3
-Troll Chaman x 2
+Troll Suicida x 2
+Troll Chaman x 3
 Troll Chaman Rojo x 2
 (54 / 90)
 
@@ -87,6 +89,5 @@ Elfo Oscuro Mago x 2
 (84 / 90)
 
 Oleada 12 FINAL :
-Troll Chaman x 2
-Elfo Oscuro Mago x 4
+Elfo Oscuro Mago x 6
 (90 / 90)
