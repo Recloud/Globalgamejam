@@ -1,0 +1,6 @@
+//http://es.fonts2u.com/viking.fuente
+
+//en global_obj, evento draw
+
+draw_set_font(viking_fnt);
+draw_text_transformed_colour(50,650,"Score " + string(puntaje) ,1,1,0,c_white,c_white,c_white,c_white,1);
