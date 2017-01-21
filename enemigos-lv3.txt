@@ -1,0 +1,42 @@
+ETAPA 3 : Montaña del Mal
+
+Especie : Hombres-Aves.
+Son similares a los humanos, pero llenos de plumas. Tienen cabeza y pies de pajaro, tambien alas, pero tienen torso, brazos y piernas de humano.
+Tienen una especie de armadura de cuero (traje de combate).
+
+- Ave Lanzador : Se queda quieto mientras lanza plumas afiladas al enemigo.
+  - Movimientos :
+    a) se mantiene en espera
+    b) lanza plumas
+    c) muere
+
+- Ave atacante : Se lanza solo armado con sus puños a fin de acabar con el invasor.
+  -Movimientos :
+    a) vuela hacia el enemigo
+    b) muere
+
+- Ave suicida : Igual que el Ave atacante, solo que tiene una extraña caja en su espalda.
+La caja explota al morir el ave o al hacer contacto con el enemigo, lanzando chispas electricas en todas direcciones.
+  - Movimientos :
+    a) corre hacia el enemigo
+    b) explota
+
+Especie : Valkirias.
+Mas similares a los humanos (pero con alas), las valkirias son agiles y muy inteligentes.
+Visten similar a los humanos, pero con una especie de armadura.
+
+- Valkiria arquera : lanza flechas desde lejos mientras se mueve para esquivar los ataques del enemigo.
+  - Movimientos :
+    a) Se mueve mientras apunta al enemigo
+    b) Lanza flecha
+    b) Muere
+
+JEFE : DRAGON DE LA MONTAÑA
+Este dragon posee grandes alas, varios cuernos en su cabeza y afilados dientes y garras.
+  - Movimientos :
+    a) Se mantiene quieto mientras sus subditos del cielo atacan
+    b) Se mueve rapidamente tratando de devorar al enemigo
+    c) Lanza una gran rafaga de fuego de su boca, en linea recta, mientras el se mueve
+    d) Lanza rapidas rafagas de fuego desde su boca, moviendo su cuello para abarcar todas las direcciones
+    e) Recibe daño
+    f) Muere
