@@ -1,0 +1,27 @@
+//create
+r = 0;
+timer= 0;
+st = 0
+
+//step
+if st == 0{
+r += 0.5 
+}
+
+if r >= 50 and st = 0{
+    r += 0.25
+    if r >= 200 and st =0 {
+        r = 200
+        st = 1
+    }
+} 
+ 
+if st = 1 {
+    timer += 1
+}
+if timer == 120{
+    instance_destroy()
+}
+
+//draw
+draw_circle_colour(x,y,r,c_blue,c_blue,1)
