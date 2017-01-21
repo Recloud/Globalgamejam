@@ -1,6 +1,0 @@
-Left released-----------------------------------------------------------
-if(casilla_juego_obj.NumberofTurn == 1){
-    casilla_juego_obj.NumberofTurn = 2;
-}else if(casilla_juego_obj.NumberofTurn == 2){
-    casilla_juego_obj.NumberofTurn = 1;
-}
