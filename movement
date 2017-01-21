@@ -1,9 +1,9 @@
 //up
-if keyboard_check (ord('W')){
+if keyboard_check (ord('W')) {
     y -=spd
 };
 //right
-if keyboard_check (ord('D')){
+if keyboard_check (ord('D')) and !place_meeting(x+spd,y, blacklines_obj){
     x+=spd
 };
 //down
@@ -11,6 +11,6 @@ if keyboard_check (ord('S')){
     y+=spd
 };
 //left
-if keyboard_check (ord('A')){
+if keyboard_check (ord('A'))and !place_meeting(x-spd,y, blacklines_obj){
     x-=spd
 };
