@@ -1,0 +1,37 @@
+Create--------------------------------------
+//variables
+room_speed = 60;
+poderes_ondas = 1;
+wheel_pasos = 0;
+
+
+Step----------------------------------------
+if(mouse_wheel_down()){
+    poderes_ondas += 1;
+}
+if(mouse_wheel_up()){
+    poderes_ondas -=1;
+}
+if(poderes_ondas == 1){
+    with(selection_cube_obj){
+        x = 1152;
+        y = 96;
+    }
+}else if(poderes_ondas == 2){
+    with(selection_cube_obj){
+        x = 1152;
+        y = 224;
+    }
+}else if(poderes_ondas == 3){
+    with(selection_cube_obj){
+        x = 1152;
+        y = 352;
+    }
+}
+
+//arreglo de bugs
+if(poderes_ondas == 4 and mouse_wheel_down()){
+    poderes_ondas = 1;
+}else if(poderes_ondas == 0 and mouse_wheel_up()){
+    poderes_ondas = 3;
+}
