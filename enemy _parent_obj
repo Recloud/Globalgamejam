@@ -1,0 +1,12 @@
+//create
+stt = 0;
+
+//
+
+//wave3
+if instance_exists(wave3_obj){
+    if collision_circle(wave3_obj.x,wave3_obj.y,r,enemy_parent_obj,0,0) and stt = 0{
+       hp -= 1; 
+       stt = 1;
+    }
+}
