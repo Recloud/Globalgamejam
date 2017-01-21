@@ -2,6 +2,14 @@
 
 puntaje=0;
 
-//en puntaje_obj, evento collition with player_obj
+//en tesoro1_obj, evento collition with player_obj
 
 global_obj.puntaje += 5;
+
+//en tesoro2_obj, evento collition with player_obj
+
+global_obj.puntaje += 10;
+
+//en tesoro3_obj, evento collition with player_obj
+
+global_obj.puntaje += 15;
