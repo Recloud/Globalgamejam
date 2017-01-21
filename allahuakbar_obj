@@ -1,0 +1,29 @@
+Create------------------------------------------
+hp = 10;
+count = 0;
+timer = 0;
+countwaiting = 0;
+
+
+Step--------------------------------------------
+count += 1;
+timer += 1;
+
+if(count = 60){
+    direction = point_direction(x,y,player_obj.x,player_obj.y);
+    speed = 7;
+}
+if(distance_to_object(player_obj) <= 96){
+   allahuakbar_obj.speed = 0;
+   countwaiting +=1;
+   
+   if(countwaiting == 20){
+   for (i = 0; i < 360; i += 20){
+        a = instance_create(x,y,balas_obj)
+        a.direction = i;
+        a.speed = 6;
+  }
+  instance_destroy()
+  }
+}
+timer = 0;
