@@ -1,0 +1,41 @@
+ETAPA 2 : Mar del Terror
+
+Especie : Tritones.
+Los tritones son similares a los humanos, de piel verde-azulado escamosa, con orejas largas con agallas y calvos.
+Tienen una especie de armadura de cuero (traje de combate).
+
+- Triton Mago : Se queda quieto mientras lanza bolas magicas de agua.
+  - Movimientos :
+    a) se mantiene en espera
+    b) lanza bola de agua
+    c) muere
+
+- Triton atacante : Se lanza solo armado con sus puños a fin de acabar con el invasor.
+  -Movimientos :
+    a) corre hacia el enemigo
+    b) muere
+
+- Triton suicida : Igual que el Triton atacante, solo que tiene una extraña concha gigante con espinas en su espalda.
+La concha explota al morir el triton o al hacer contacto con el enemigo, lanzando espinas para todos lados.
+  - Movimientos :
+    a) corre hacia el enemigo
+    b) explota
+
+Especie : Sirenas.
+Mas similares a los humanos, las sirenas son agiles nadadoras y muy inteligentes. Visten similar a los humanos.
+
+- Sirena arquera : lanza flechas desde lejos mientras se mueve para esquivar los ataques del enemigo.
+  - Movimientos :
+    a) Se mueve mientras apunta al enemigo
+    b) Lanza flecha
+    b) Muere
+
+JEFE : KRAKEN
+El Kraken es una especie de calamar gigante, el cual intimida con su enorme tamaño y por su gran cantidad de tentaculos (10).
+  - Movimientos :
+    a) Se mantiene quieto mientras sus subditos del mar atacan
+    b) Ataca con sus tentaculos
+    c) Lanza espinas desde su puntiaguda cabeza en todas direcciones
+    d) Se oculta bajo el agua y reaparece en otro lugar
+    e) Recibe daño
+    f) Muere
