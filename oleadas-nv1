@@ -1,0 +1,86 @@
+Dificultad :
+Facil = velocidad de repeticion de balas enemigas lenta
+
+Referente enemigos :
+a) Troll Atacante : se lanza para atacarte cuerpo a cuerpo
+b) Troll Chaman : lanza bolas de fuego y se queda quieto
+c) Troll Suicida : se lanza y explota
+d) Troll Chaman Rojo : lanza ataques y se mueve
+e) Elfo Oscuro Mago : lanza ataques en todas direcciones
+
+Estimativo tiempo : 2 seg. x enemigo
+Max. Tiempo etapa : 3 minutos = 180 segundos = 90 enemigos
+
+Oleada 1 :
+Troll atacante x 2
+(2 / 90)
+
+Oleada 2 :
+Troll atacante x 2
+Troll chaman x 1
+(5 / 90)
+
+Oleada 3 :
+Troll atacante x 3
+Troll chaman x 1
+(9 / 90)
+
+Oleada 3 :
+Troll atacante x 3
+Troll chaman x 1
+Troll suicida x 1
+(14 / 90)
+
+Oleada 4 :
+Troll atacante x 3
+Troll chaman x 2
+Troll suicida x 2
+(21 / 90)
+
+Oleada 5 :
+Troll atacante x 4
+Troll chaman x 2
+Troll suicida x 2
+(29 / 90)
+
+Oleada 6 :
+Troll atacante x 4
+Troll chaman x 2
+Troll suicida x 2
+Troll Chaman Rojo x 1
+(38 / 90)
+
+Oleada 7 :
+Troll atacante x 4
+Troll Suicida x 2
+Troll Chaman x 2
+Troll Chaman Rojo x 2
+(48 / 90)
+
+Oleada 8 :
+Troll Atacante x 4
+Troll Suicida x 3
+Troll Chaman x 2
+Troll Chaman Rojo x 2
+(59 / 90)
+
+Oleada 9 :
+Troll Atacante x 3
+Troll Suicida x 3
+Troll Chaman x 2
+Troll Chaman Rojo x 2
+Elfo Oscuro Mago x 1
+(70 / 90)
+
+Oleada 10 :
+Troll Suicida x 3
+Troll Chaman x 3
+Troll Chaman Rojo x 3
+Elfo Oscuro Mago x 2
+(81 / 90)
+
+Oleada 11 FINAL :
+Troll Chaman x 3
+Troll Chaman Rojo x 3
+Elfo Oscuro Mago x 3
+(90 / 90)
