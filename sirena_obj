@@ -1,0 +1,37 @@
+//create
+image_speed = 5/60
+timer = 0
+dire = 10
+hp = 10
+fl = instance_create(x,y,enemy_shd_obj)
+
+//destroy
+with (fl) instance_destroy()
+
+//step
+timer += 1 
+fl.x = x
+fl.y = y
+
+if timer = 30 { 
+   a = instance_create(x,y,bala_obj)
+   a.speed = 5
+   a.direction = dire
+   a.sprite_index = en_bullet_2_spr
+   dire -= 10
+   if dire>= 360 {
+      dire = 0
+   }
+   timer = 0
+}
+
+//collision con bala del player
+hp -= 1
+audio_play_sound(hit_snd,1,0)
+with other instance_destroy()
+if hp <= 0 {
+   instance_destroy()
+}
+
+//collison con destroyer ring
+instance_destroy()
