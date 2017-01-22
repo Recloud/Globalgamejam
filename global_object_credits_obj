@@ -1,0 +1,35 @@
+Create---------------------------------------------
+yy = 0;
+stop_decresing = false;
+
+
+Step-----------------------------------------------
+if(stop_decresing = false){
+yy -= 1;
+}
+
+if(yy == -670){
+stop_decresing = true;
+}
+
+
+draw_text_colour(room_width/2-80,720+yy,"Programmers",c_yellow,c_yellow,c_yellow,c_yellow,1)
+draw_text_colour(room_width/2-80,752+yy,"Eduardo Ortega",c_black,c_black,c_black,c_black,1)
+draw_text_colour(room_width/2-80,784+yy,"Danny Rios",c_black,c_black,c_black,c_black,1)
+draw_text_colour(room_width/2-80,816+yy,"Juan Pablo Orellana",c_black,c_black,c_black,c_black,1)
+draw_text_colour(room_width/2-80,848+yy,"Nicolas Huerta",c_black,c_black,c_black,c_black,1)
+
+
+draw_text_colour(room_width/2-80,912+yy,"Designers",c_yellow,c_yellow,c_yellow,c_yellow,1)
+draw_text_colour(room_width/2-80,944+yy,"Julio Cofre",c_black,c_black,c_black,c_black,1)
+draw_text_colour(room_width/2-80,976+yy,"Juan Pablo Orellana",c_black,c_black,c_black,c_black,1)
+draw_text_colour(room_width/2-80,1008+yy,"Eduardo Ortega",c_black,c_black,c_black,c_black,1)
+
+
+draw_text_colour(room_width/2-80,1072+yy,"Art",c_yellow,c_yellow,c_yellow,c_yellow,1)
+draw_text_colour(room_width/2-80,1104+yy,"David Donoso",c_black,c_black,c_black,c_black,1)
+draw_text_colour(room_width/2-80,1136+yy,"Julio Cofre",c_black,c_black,c_black,c_black,1)
+
+
+draw_text_colour(room_width/2-80,1200+yy,"Music",c_yellow,c_yellow,c_yellow,c_yellow,1)
+draw_text_colour(room_width/2-80,1232+yy,"Matias Castro",c_black,c_black,c_black,c_black,1)
