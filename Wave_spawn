@@ -1,8 +1,8 @@
 //step
 waveTime +=1;
-randomizer = choose(300,350,400,450,500,550,600,650,700,750,800,850,900,950);
+randomizer = choose(290,340,390,440,490,540,590,640,690,740,790,840,890,940);
 while(randomizer = randomizerTemp){
-    randomizer = choose(300,350,400,450,500,550,600,650,700,750,800,850,900,950);
+    randomizer = choose(290,340,390,440,490,540,590,640,690,740,790,840,890,940);
 }
 randomizerTemp = randomizer;
 etapa1_oleada1[0] = enemy_kamikaze_obj;
@@ -28,7 +28,7 @@ etapa1_oleada5[1] = enemy_kamikaze2_obj;
 etapa1_oleada5[2] = enemy_shoot_at_obj;
 etapa1_oleada5[3] = enemy_kamikaze2_obj;
 etapa1_oleada5[4] = enemy_shoot_at_obj;
-etapa1_oleada5[5] = enemy_kamikaze2_obj;
+etapa1_oleada6[5] = enemy_kamikaze2_obj;
 
 etapa1_oleada6[0] = enemy_kamikaze_obj;
 etapa1_oleada6[1] = enemy_shoot_at_obj;
@@ -40,30 +40,30 @@ etapa1_oleada6[6] = enemy_kamikaze_obj;
 
 etapa1_oleada7[0] = enemy_kamikaze_obj;
 etapa1_oleada7[1] = enemy_shoot_at_obj;
-etapa1_oleada7[2] = enemy_shoot_at_obj;
+etapa1_oleada7[2] = enemy_walker_obj;
 etapa1_oleada7[3] = enemy_kamikaze_obj;
 etapa1_oleada7[4] = enemy_shoot_at_obj;
-etapa1_oleada7[5] = enemy_shoot_at_obj;
+etapa1_oleada7[5] = enemy_walker_obj;
 etapa1_oleada7[6] = enemy_kamikaze_obj;
 etapa1_oleada7[7] = enemy_shoot_at_obj;
 
 etapa1_oleada8[0] = enemy_shoot_at_obj;
 etapa1_oleada8[1] = enemy_kamikaze2_obj;
-etapa1_oleada8[2] = enemy_shoot_at_obj;
+etapa1_oleada8[2] = enemy_walker_obj;
 etapa1_oleada8[3] = enemy_shoot_at_obj;
 etapa1_oleada8[4] = enemy_kamikaze2_obj;
-etapa1_oleada8[5] = enemy_shoot_at_obj;
+etapa1_oleada8[5] = enemy_walker_obj;
 etapa1_oleada8[6] = enemy_shoot_at_obj;
 etapa1_oleada8[7] = enemy_kamikaze2_obj;
 
 etapa1_oleada9[0] = enemy_shoot_at_obj;
-etapa1_oleada9[1] = enemy_shoot_at_obj;
+etapa1_oleada9[1] = enemy_walker_obj;
 etapa1_oleada9[2] = enemy_shoot_at_obj;
-etapa1_oleada9[3] = enemy_shoot_at_obj;
+etapa1_oleada9[3] = enemy_walker_obj;
 etapa1_oleada9[4] = enemy_shoot_at_obj;
-etapa1_oleada9[5] = enemy_shoot_at_obj;
+etapa1_oleada9[5] = enemy_walker_obj;
 etapa1_oleada9[6] = enemy_shoot_at_obj;
-etapa1_oleada9[7] = enemy_shoot_at_obj;
+etapa1_oleada9[7] = enemy_walker_obj;
 
 etapa1_oleada10[0] = enemy_kamikaze_obj;
 etapa1_oleada10[1] = enemy_shoot_at_obj;
@@ -75,23 +75,22 @@ etapa1_oleada10[6] = enemy_kamikaze_obj;
 etapa1_oleada10[7] = enemy_shoot_at_obj;
 
 etapa1_oleada11[0] = enemy_kamikaze2_obj;
-etapa1_oleada11[1] = enemy_shoot_at_obj;
+etapa1_oleada11[1] = enemy_walker_obj;
 etapa1_oleada11[2] = enemy_turret_obj;
 etapa1_oleada11[3] = enemy_kamikaze2_obj;
-etapa1_oleada11[4] = enemy_shoot_at_obj;
+etapa1_oleada11[4] = enemy_walker_obj;
 etapa1_oleada11[5] = enemy_turret_obj;
 etapa1_oleada11[6] = enemy_kamikaze2_obj;
-etapa1_oleada11[7] = enemy_shoot_at_obj;
+etapa1_oleada11[7] = enemy_walker_obj;
 
 etapa1_oleada12[0] = enemy_turret_obj;
-etapa1_oleada12[1] = enemy_shoot_at_obj;
+etapa1_oleada12[1] = enemy_walker_obj;
 etapa1_oleada12[2] = enemy_turret_obj;
-etapa1_oleada12[3] = enemy_shoot_at_obj;
+etapa1_oleada12[3] = enemy_walker_obj;
 etapa1_oleada12[4] = enemy_turret_obj;
-etapa1_oleada12[5] = enemy_shoot_at_obj;
+etapa1_oleada12[5] = enemy_walker_obj;
 etapa1_oleada12[6] = enemy_turret_obj;
-etapa1_oleada12[7] = enemy_shoot_at_obj;
-
+etapa1_oleada12[7] = enemy_walker_obj;
 switch (wave_num){
 case 0: 
         if waveTime = 120{
