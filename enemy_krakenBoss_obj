@@ -1,0 +1,97 @@
+//create
+count = 0
+hp = 300
+alive = 1
+speed = 1
+direction = 270
+image_angle = direction
+image_speed = 2/60
+value = 3
+st = 0
+timer = 0
+timer2 = 0
+timer3 = 0
+player_obj.frozen = 1
+am1 = 180
+stt = 0
+atk = 0//Default
+timer4 = 0
+timer5 = 0
+
+//step
+//first movement
+
+if y >= 128 and st = 0 {
+   speed = 0
+   background_vspeed[0] = 3
+   background_hspeed[0] = 3
+   with (rumble_fx) instance_destroy()
+   st = 1
+   stt = 1
+   player_obj.frozen = 0
+}
+
+//crea rocas
+if st = 1 {
+   timer += 1 
+   if timer = am1 {
+      a = instance_create(choose(260,980),random_range(96,400),sirena_obj)
+      a.speed = 2
+      if a.x = 260 {
+         a.direction = 300
+      } else if a.x = 980 {
+                a.direction = 220
+             }  
+      timer = 0
+      a.image_angle = point_direction(x,y,player_obj.x,player_obj.x)
+  }
+}
+
+if stt = 1 { //elige ataques
+   timer2 += 1 
+   if timer2 >= 200 {
+      atk  = choose(1,2)
+      stt = 2
+      timer2 = 0
+   }
+}
+
+switch(atk) {
+
+//TENTACULO
+case 1: timer3 += 1
+        if timer3 >= 180 {
+           scr_rumble(5,20)
+           instance_create(choose(280,1000),player_obj.y,tentacle_obj)
+           timer3 = 0
+           stt = 1
+           atk = 0
+        }
+break;
+case 2: timer4 += 1 
+        timer5 += 1
+        if timer5 >= 200 {
+            timer5 = 0
+            timer4 = 0
+            stt = 1
+            atk = 0
+        }
+        if timer4 = 20 {
+           a = instance_create(x,y + 120 ,bala_obj)
+           a.speed = 5
+           a.direction = point_direction(x,y,player_obj.x,player_obj.y)
+           a.image_angle = direction
+           a.image_xscale = 2
+           a.image_yscale = 2
+           timer4 = 0
+        }
+break;
+}
+
+//collision bala player
+hp -= 1
+audio_play_sound(hit_snd,1,0)
+with other instance_destroy()
+if hp <= 0 {
+   instance_destroy()
+}
