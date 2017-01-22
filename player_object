@@ -114,3 +114,14 @@ if alive {
    }
 
 }//ALIVE
+
+
+Draw-----------------------------------------------
+draw_self()
+if(hp == 0){
+draw_rectangle_colour(0,0,1280,720,c_black,c_black,c_black,c_black,0)
+draw_text_colour(600,room_height/2,"You Lose",c_white,c_gray,c_gray,c_gray,1)
+draw_text_colour(600,room_height/2+64,"Press R to continue",c_white,c_gray,c_gray,c_gray,1)
+draw_set_font(viking_fnt)
+monsters_waves_obj.wave_num = -1;
+}
