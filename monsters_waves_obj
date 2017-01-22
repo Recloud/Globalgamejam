@@ -3,13 +3,14 @@ waveTime = 0;
 monstersInGame = 0;
 wave_num = 0;
 monstersAlive = 0;
-lastWave = 10;
+lastWave = 11;
 randomizerTemp = 0;
 count = 0;
 inicio_count = false;
 GanastelaPartida = false;
 
 //step
+if(room = r_test){//step
 waveTime +=1;
 randomizer = choose(340,390,440,490,540,590,640,690,740,790,840,890,940);
 while(randomizer = randomizerTemp){
@@ -104,6 +105,7 @@ etapa1_oleada12[6] = enemy_turret_obj;
 etapa1_oleada12[7] = enemy_walker_obj;
 switch (wave_num){
 case 0: 
+        show_debug_message("ALIVE IN WAVE: "+string(monstersAlive));
         if waveTime = 120{
            if monstersInGame < 2 {
                 if monstersInGame < 0 {
@@ -281,13 +283,321 @@ if (monstersAlive = 0 and waveTime >= 120 and wave_num <= lastWave){
 if(inicio_count == true){
     count += 1;
 }
+}else{
+    //step
+waveTime +=1;
+randomizer = choose(290,340,390,440,490,540,590,640,690,740,790,840,890,940);
+while(randomizer = randomizerTemp){
+    randomizer = choose(290,340,390,440,490,540,590,640,690,740,790,840,890,940);
+}
+randomizerTemp = randomizer;
+etapa2_oleada1[0] = enemy_turret_obj;
+etapa2_oleada1[1] = enemy_kamikaze_obj;
+etapa2_oleada1[2] = enemy_kamikaze_obj;
+
+etapa2_oleada2[0] = enemy_walker_obj;
+etapa2_oleada2[1] = enemy_kamikaze_obj;
+etapa2_oleada2[2] = enemy_kamikaze_obj;
+etapa2_oleada2[3] = enemy_shoot_at_obj;
+
+etapa2_oleada3[0] = enemy_kamikaze_obj;
+etapa2_oleada3[1] = enemy_shoot_at_obj;
+etapa2_oleada3[2] = enemy_kamikaze2_obj;
+etapa2_oleada3[3] = enemy_shoot_at_obj;
+etapa2_oleada3[4] = enemy_kamikaze_obj;
+
+etapa2_oleada4[0] = enemy_turret_obj;
+etapa2_oleada4[1] = enemy_kamikaze2_obj;
+etapa2_oleada4[2] = enemy_kamikaze_obj;
+etapa2_oleada4[3] = enemy_kamikaze2_obj;
+etapa2_oleada4[4] = enemy_kamikaze_obj;
+etapa2_oleada4[5] = enemy_kamikaze_obj;
+
+etapa2_oleada5[0] = enemy_shoot_at_obj;
+etapa2_oleada5[1] = enemy_kamikaze2_obj;
+etapa2_oleada5[2] = enemy_shoot_at_obj;
+etapa2_oleada5[3] = enemy_turret_obj;
+etapa2_oleada5[4] = enemy_turret_obj;
+etapa2_oleada5[5] = enemy_kamikaze2_obj;
+etapa2_oleada5[6] = enemy_kamikaze2_obj
+
+etapa2_oleada6[0] = enemy_kamikaze_obj;
+etapa2_oleada6[1] = enemy_shoot_at_obj;
+etapa2_oleada6[2] = enemy_kamikaze2_obj;
+etapa2_oleada6[3] = enemy_kamikaze_obj;
+etapa2_oleada6[4] = enemy_shoot_at_obj;
+etapa2_oleada6[5] = enemy_kamikaze2_obj;
+etapa2_oleada6[6] = enemy_kamikaze_obj;
+etapa2_oleada6[7] = enemy_walker_obj;
+
+etapa2_oleada7[0] = enemy_turret_obj;
+etapa2_oleada7[1] = enemy_shoot_at_obj;
+etapa2_oleada7[2] = enemy_walker_obj;
+etapa2_oleada7[3] = enemy_kamikaze_obj;
+etapa2_oleada7[4] = enemy_shoot_at_obj;
+etapa2_oleada7[5] = enemy_walker_obj;
+etapa2_oleada7[6] = enemy_kamikaze_obj;
+etapa2_oleada7[7] = enemy_shoot_at_obj;
+
+etapa2_oleada8[0] = enemy_shoot_at_obj;
+etapa2_oleada8[1] = enemy_kamikaze2_obj;
+etapa2_oleada8[2] = enemy_walker_obj;
+etapa2_oleada8[3] = enemy_turret_obj;
+etapa2_oleada8[4] = enemy_kamikaze2_obj;
+etapa2_oleada8[5] = enemy_walker_obj;
+etapa2_oleada8[6] = enemy_shoot_at_obj;
+etapa2_oleada8[7] = enemy_kamikaze2_obj;
+
+etapa2_oleada9[0] = enemy_shoot_at_obj;
+etapa2_oleada9[1] = enemy_walker_obj;
+etapa2_oleada9[2] = enemy_shoot_at_obj;
+etapa2_oleada9[3] = enemy_kamikaze_obj;
+etapa2_oleada9[4] = enemy_shoot_at_obj;
+etapa2_oleada9[5] = enemy_walker_obj;
+etapa2_oleada9[6] = enemy_shoot_at_obj;
+etapa2_oleada9[7] = enemy_walker_obj;
+
+etapa2_oleada10[0] = enemy_kamikaze2_obj;
+etapa2_oleada10[1] = enemy_shoot_at_obj;
+etapa2_oleada10[2] = enemy_turret_obj;
+etapa2_oleada10[3] = enemy_kamikaze_obj;
+etapa2_oleada10[4] = enemy_shoot_at_obj;
+etapa2_oleada10[5] = enemy_turret_obj;
+etapa2_oleada10[6] = enemy_kamikaze2_obj;
+etapa2_oleada10[7] = enemy_shoot_at_obj;
+
+etapa2_oleada11[0] = enemy_kamikaze2_obj;
+etapa2_oleada11[1] = enemy_walker_obj;
+etapa2_oleada11[2] = enemy_turret_obj;
+etapa2_oleada11[3] = enemy_kamikaze2_obj;
+etapa2_oleada11[4] = enemy_walker_obj;
+etapa2_oleada11[5] = enemy_turret_obj;
+etapa2_oleada11[6] = enemy_kamikaze2_obj;
+etapa2_oleada11[7] = enemy_walker_obj;
+
+etapa2_oleada12[0] = enemy_turret_obj;
+etapa2_oleada12[1] = enemy_walker_obj;
+etapa2_oleada12[2] = enemy_turret_obj;
+etapa2_oleada12[3] = enemy_walker_obj;
+etapa2_oleada12[4] = enemy_turret_obj;
+etapa2_oleada12[5] = enemy_walker_obj;
+etapa2_oleada12[6] = enemy_turret_obj;
+etapa2_oleada12[7] = enemy_walker_obj;
+
+etapa2_oleada13[0] = enemy_krakenBoss_obj;
+
+switch (wave_num){
+case 0: 
+        if waveTime = 80{
+           if monstersInGame < 3 {
+                if monstersInGame < 0 {
+                    monstersInGame = 0;
+                }
+                instance_create(randomizer,0,etapa2_oleada1[monstersInGame]);
+                monstersInGame +=1;
+                monstersAlive +=1;
+                waveTime=0;
+           }
+        }
+        break;
+case 1:
+        if waveTime = 80{
+            if monstersInGame < 4 {
+                if monstersInGame < 0 {
+                    monstersInGame = 0;
+                }
+                instance_create(randomizer,0,etapa2_oleada2[monstersInGame]);
+                monstersInGame +=1;
+                monstersAlive +=1;
+                waveTime=0;
+           }
+        }
+        break;
+case 2:
+       if waveTime = 80{
+           if monstersInGame < 5 {
+                if monstersInGame < 0 {
+                    monstersInGame = 0;
+                }
+                instance_create(randomizer,0,etapa2_oleada3[monstersInGame]);
+                monstersInGame +=1;
+                monstersAlive +=1;
+                waveTime=0;
+           }
+        }
+        break; 
+case 3:
+        if waveTime = 80{
+           if monstersInGame < 6 {
+                if monstersInGame < 0 {
+                    monstersInGame = 0;
+                }
+                instance_create(randomizer,0,etapa2_oleada4[monstersInGame]);
+                monstersInGame +=1;
+                monstersAlive +=1;
+                waveTime=0;
+           }
+        }
+        break;
+case 4:
+        if waveTime = 80{
+           if monstersInGame < 7 {
+                if monstersInGame < 0 {
+                    monstersInGame = 0;
+                }
+                instance_create(randomizer,0,etapa2_oleada5[monstersInGame]);
+                monstersInGame +=1;
+                monstersAlive +=1;
+                waveTime=0;
+           }
+        }
+        break;
+case 5:
+        if waveTime = 80{
+           if monstersInGame < 8 {
+                if monstersInGame < 0 {
+                    monstersInGame = 0;
+                }
+                instance_create(randomizer,0,etapa2_oleada6[monstersInGame]);
+                monstersInGame +=1;
+                monstersAlive +=1;
+                waveTime=0;
+           }
+        }
+        break;
+case 6:
+        if waveTime = 80{
+           if monstersInGame < 8 {
+                if monstersInGame < 0 {
+                    monstersInGame = 0;
+                }
+                instance_create(randomizer,0,etapa2_oleada7[monstersInGame]);
+                monstersInGame +=1;
+                monstersAlive +=1;
+                waveTime=0;
+           }
+        }
+        break;
+case 7:
+        if waveTime = 80{
+           if monstersInGame < 8 {
+                if monstersInGame < 0 {
+                    monstersInGame = 0;
+                }
+                instance_create(randomizer,0,etapa2_oleada8[monstersInGame]);
+                monstersInGame +=1;
+                monstersAlive +=1;
+                waveTime=0;
+           }
+        }
+        break;
+case 8:
+        if waveTime = 80{
+           if monstersInGame < 8 {
+                if monstersInGame < 0 {
+                    monstersInGame = 0;
+                }
+                instance_create(randomizer,0,etapa2_oleada9[monstersInGame]);
+                monstersInGame +=1;
+                monstersAlive +=1;
+                waveTime=0;
+           }
+        }
+break;
+case 9:
+        if waveTime = 80{
+           if monstersInGame < 8 {
+                if monstersInGame < 0 {
+                    monstersInGame = 0;
+                }
+                instance_create(randomizer,0,etapa2_oleada10[monstersInGame]);
+                monstersInGame +=1;
+                monstersAlive +=1;
+                waveTime=0;
+           }
+        }
+break;
+case 10:
+        if waveTime = 80{
+           if monstersInGame < 8 {
+                if monstersInGame < 0 {
+                    monstersInGame = 0;
+                }
+                instance_create(randomizer,0,etapa2_oleada11[monstersInGame]);
+                monstersInGame +=1;
+                monstersAlive +=1;
+                waveTime=0;
+           }
+        }
+break;
+case 11:
+        if waveTime = 80{
+           if monstersInGame < 8 {
+                if monstersInGame < 0 {
+                    monstersInGame = 0;
+                }
+                instance_create(randomizer,0,etapa2_oleada12[monstersInGame]);
+                monstersInGame +=1;
+                monstersAlive +=1;
+                waveTime=0;
+           }
+        }
+        break;
+case 12:
+        if waveTime = 80{
+           if monstersInGame < 1 {
+                if monstersInGame < 0 {
+                    monstersInGame = 0;
+                }
+                instance_create(randomizer,0,etapa2_oleada13[monstersInGame]);
+                monstersInGame +=1;
+                monstersAlive +=1;
+                waveTime=0;
+           }
+        }
+        break;
+
+case 13:
+        if waveTime = 120{
+           if monstersInGame <= 0 {
+                if monstersInGame <= 0 {
+                    monstersInGame = 0;
+                }
+                GanastelaPartida = true;
+                waveTime=0;
+           }
+        }
+        break;
+        
+}//end of switch
+if (monstersAlive = 0 and waveTime >= 80 and wave_num <= lastWave){
+        wave_num += 1;
+        monstersInGame = 0;
+        waveTime = 0;
+    }
+    
+if(inicio_count == true){
+    count += 1;
+}
+}
 Draw---------------------------------------------
 if(GanastelaPartida == true){
-    depth= -50
-    draw_rectangle_colour(480,320,805,400,c_black,c_black,c_black,c_black,0)
-    draw_text_colour(482,352,"Level Complete",c_white,c_white,c_white,c_white,1)
-    inicio_count = true;
-    if(count == 180){
-        //ir a siguiente nivel
+    if(room = r_test){
+        depth= -50
+        draw_rectangle_colour(480,320,805,400,c_black,c_black,c_black,c_black,0)
+        draw_text_colour(482,352,"Level Complete",c_white,c_white,c_white,c_white,1)
+        inicio_count = true;
+        if(count == 180){
+            room_goto(r_lvl2);
+        }
+    }else{
+        depth= -50
+        draw_rectangle_colour(480,320,805,400,c_black,c_black,c_black,c_black,0)
+        draw_text_colour(482,352,"GAME COMPLETE",c_white,c_white,c_white,c_white,1)
+        inicio_count = true;
+        if(count == 190){
+            room_goto(r_credits);
+        }
+        
     }
 }
